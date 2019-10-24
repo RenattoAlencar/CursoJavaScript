@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Concatenação e Templates String</title>
+</head>
+<style>
+    body {
+        background-color: darkmagenta;
+    }
+</style>
+
+<body>
+
+
+
+    <h1>Calculo dentro do Prompt</h1>
+    <p>Concatenação</p>
+    <p>Templates String </p>
+
+
+
+
+
+    <script>
+        /*O Prompt tem como padrão retornar valores como String
+        Usei o Number para converter
+        Poderia usar o 
+        Number.parse(int) ou apenas parse(int) 
+        O mesmo com Float para converte para um valor real 
+        Caso queira forçar a Saida esse metodo de converter é mais indicado
+        
+        Converte ao contratio Numero para String:
+            - String(var)
+            - var.toString*/
+
+        var $numero1 = Number(window.prompt('Digite o Primeiro Número:'))
+        var _numero2 = Number(window.prompt('Digite o Segundo Número: '))
+
+        // O simbolo mais serve para Concatenação e Adição
+        var soma = ($numero1 + _numero2)
+
+        window.alert(` A soma dos Valores ${$numero1} e ${_numero2} são: ${soma}`)
+
+
+    </script>
+
+</body>
+
+</html>
