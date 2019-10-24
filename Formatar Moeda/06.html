@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Converter Moeda</title>
+</head>
+
+<style>
+
+body{
+    background-color: forestgreen;
+    font: normal 16pt arial;
+}
+
+</style>
+
+
+<body>
+    
+
+<h1>Convertendo Valor para tipo Moeda BR</h1>
+
+<script>
+
+var _salario = Number(window.prompt('Digite seu Salario'))
+
+//Formatação simples com 2 casas de
+window.document.write(`O Salario digitado foi de ${_salario.toFixed(2).replace('.',',')} <br>`)
+//Formatação mais avançada de Salario
+window.document.write(`Formatação Moeda BR ${_salario.toLocaleString('pt-BR', {style: 'currency',currency: 'BRL'})} `)
+
+//Teste Realizados no NodeJs
+
+</script>
+
+
+
+
+</body>
+</html>
