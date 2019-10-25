@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulando o DOM</title>
+</head>
+<style>
+    body {
+        background-color: cornflowerblue;
+        font: normal 17pt arial;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <h1>Manipulando Dom JS</h1>
+    <p>Aqui vai o Resultado</p>
+    <p>Aprendendo a Usar o <strong>DOM </strong>em JS</p>
+
+    <!-- Posso  selecionar qualque Elemento da Arvore com o Dom Por:
+    Id, Marca(p), Nome, Class e QuerySelector,-->
+
+    <!--Posso Buscar por id, Name-->
+    <div id="msg" name="nameMsg" class="classMsg">
+        click aqui
+
+    </div>
+
+    <script>
+        /*Buscando por TagName, Tenho dois elementos <p> 
+        Então tenho de Informar a ordem que vou Buscar com []
+        Para realizar a Alteração
+        */
+        var p1 = window.document.getElementsByTagName('p')[0]
+        //Mudar a Cor
+        p1.style.color = 'black'
+        var corpo = window.document.body
+        //Acessar o Background-color e Alteralor
+        corpo.style.backgroundColor = 'green'
+        /*Duas Formas de Buscar a Mesma Informação 
+        InnerText Busca apenas o Elemento sem as Alterações sem as (Tags)
+        InnerHTML busca o Elemento Igual (Incluir as Tags) ex: <Strong> do <p>[1]*/
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        window.document.write(`<br> Acessa com TemplateString ${p1.innerText}`)
+
+        /*Buscando por Id*/
+
+        //var d = window.document.getElementById('msg')
+        // d.style.background = 'blue'
+        // d.innerText = 'Alteração da div'
+
+        //Buscando por Name
+        //var n = window.document.getElementsByName('nameMsg')[0]
+        //n.style.background = 'red'
+
+        //Buscando por Class
+        //var c = window.document.getElementsByClassName('classMsg')[0]
+        //c.style.backgroundColor = 'black'
+
+        //Forma nova e mais Recomendada
+
+        //querySelector tenho que buscar padrão html tag.name ou tag#id
+        var nova = window.document.querySelector(`div#msg`)
+        nova.style.backgroundColor = 'yellow'
+    </script>
+
+</body>
+
+</html>
