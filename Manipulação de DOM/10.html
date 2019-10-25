@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulação de Dom parte 2</title>
+</head>
+<style>
+    div#area {
+        font: normal 17pt arial;
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 200px;
+        font: 20pt arial;
+        line-height: 200px;
+        text-align: center;
+        border: solid 3px red;
+ 
+    }
+</style>
+
+<body>
+
+    <h1>Eventos disparos com Mouse</h1>
+
+    <p>Mouseenter, MouseMove, MouseDown, MouseUp, Click MouseOut</p>
+
+
+
+
+    <!--O bloco sera Executado somente aquando o Evento move() acontecer-->
+    <div id="area">
+        Interaja...
+    </div>
+
+
+    <script>
+
+        var a = window.document.querySelector('div#area')
+        //Quando cria Eventos não e Necessario usar o On
+        a.addEventListener('click', clicar) 
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.style.background = 'white'
+            a.innerHTML = 'Mouse clicou'
+            a.style.color = 'black'
+            a.style.border = '3px solid black'
+        }
+
+        function entrar() {
+            a.style.background = 'chocolate'
+            a.innerHTML = 'Mouse Entrou'
+            a.style.color = 'darkblue'
+            a.style.border = '3px solid red'
+        }
+
+        function sair(){
+            a.style.background = 'darkblue'
+            a.innerHTML = 'Mouse Saiu'
+            a.style.color = 'white'
+            a.style.border = '3px solid chocolate'
+        }
+
+        //Functions com as Ações do Event List
+
+
+    </script>
+
+</body>
+
+</html>
