@@ -1,0 +1,31 @@
+body{
+    background-color: darkgoldenrod;
+    font: normal 15pt arial;
+    text-align: center;
+}
+    
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px; /*Bordas Redondas*/ 
+    padding: 15px; /*Espaço Dentro*/
+    width: 500px;
+    margin: auto; /*Centralizar na Tela*/
+    box-shadow: 6px  6px  4px rgb(44, 44, 44); /*Sombra*/
+}
+
+div#foto{
+    padding: 2px;
+    margin-top: 3px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
