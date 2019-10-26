@@ -4,7 +4,7 @@ function carregar() {
     var _fundoFoto = window.document.getElementById('foto')
     var _hora = new Date()
 
-    //var _horaAtual = _hora.getHours() 
+    var _horaAtual = _hora.getHours() 
 
     //var _horaAtual = 14 - Teste
 
